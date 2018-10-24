@@ -17,10 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPs-BV-5jS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPs-BV-5jS">
                                 <rect key="frame" x="16" y="534" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.99822002649307251" green="0.15622931718826294" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="EPs-BV-5jS" secondAttribute="height" multiplier="1:1" id="LQa-Wz-0gJ"/>
                                     <constraint firstAttribute="height" constant="100" id="dHX-9L-FpR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
@@ -31,11 +32,11 @@
                                     <action selector="DiffCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyN-r9-8ef"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nii-E3-kar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nii-E3-kar">
                                 <rect key="frame" x="259" y="534" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ykL-j4-yjn"/>
+                                    <constraint firstAttribute="width" secondItem="nii-E3-kar" secondAttribute="height" multiplier="1:1" id="rT8-Iy-k8N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="＋">
@@ -45,11 +46,11 @@
                                     <action selector="AddCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lK4-EF-Saq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-0H-Ipr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBB-0H-Ipr">
                                 <rect key="frame" x="137" y="534" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="740-Qq-nlp"/>
+                                    <constraint firstAttribute="width" secondItem="YBB-0H-Ipr" secondAttribute="height" multiplier="1:1" id="823-i9-PD2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="AC">
@@ -68,15 +69,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EPs-BV-5jS" firstAttribute="top" secondItem="lFt-UT-N4J" secondAttribute="bottom" constant="226" id="D1Q-Vh-DLk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EPs-BV-5jS" secondAttribute="bottom" constant="33" id="G2i-fv-Xfp"/>
                             <constraint firstItem="lFt-UT-N4J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="Hrh-86-nBh"/>
+                            <constraint firstItem="EPs-BV-5jS" firstAttribute="top" secondItem="lFt-UT-N4J" secondAttribute="bottom" constant="226" id="OJ7-qx-mCS"/>
                             <constraint firstItem="EPs-BV-5jS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tdf-XQ-4rg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nii-E3-kar" secondAttribute="trailing" constant="16" id="TeI-VA-7dJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nii-E3-kar" secondAttribute="bottom" constant="33" id="bNK-Ax-g8N"/>
                             <constraint firstItem="lFt-UT-N4J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="dso-B3-7VO"/>
                             <constraint firstItem="YBB-0H-Ipr" firstAttribute="leading" secondItem="EPs-BV-5jS" secondAttribute="trailing" constant="21" id="e0L-hO-RS7"/>
                             <constraint firstItem="nii-E3-kar" firstAttribute="leading" secondItem="YBB-0H-Ipr" secondAttribute="trailing" constant="22" id="gDE-YG-orl"/>
+                            <constraint firstItem="YBB-0H-Ipr" firstAttribute="top" secondItem="lFt-UT-N4J" secondAttribute="bottom" constant="226" id="h65-so-okg"/>
+                            <constraint firstItem="nii-E3-kar" firstAttribute="top" secondItem="lFt-UT-N4J" secondAttribute="bottom" constant="226" id="jhF-RX-es4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YBB-0H-Ipr" secondAttribute="bottom" constant="33" id="vkV-EY-4a8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lFt-UT-N4J" secondAttribute="trailing" constant="100" id="xhO-Bt-ynL"/>
                         </constraints>
